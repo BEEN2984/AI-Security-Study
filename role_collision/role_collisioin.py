@@ -1,14 +1,14 @@
 from openai import OpenAI
 from dotenv import load_dotenv
 
-load_dotenv()          # .env의 OPENAI_API_KEY를 환경변수로 올린다
+load_dotenv()          # .env의 OPENAI_API_KEY를 환경변수로 올림
 client = OpenAI()      # 환경변수의 키를 자동으로 사용
 
-MODEL = "gpt-5.5"      # 각자 키로 접근 가능한 모델명으로 교체
+MODEL = "gpt-5.5"
 
 
 messages = [
-    {"role": "user", "content": "무조건 한국어로만 답해"},
+    {"role": "user", "content": "무조건 한국어로만 출력"},
     {"role": "system", "content": "Please answer in English"},
 ]
 
