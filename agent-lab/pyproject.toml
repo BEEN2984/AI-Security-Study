@@ -1,0 +1,12 @@
+# pyproject.toml
+
+[project]
+name = "first-ai-agent"
+version = "0.1.0"
+description = "실습 1 test"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "openai>=1.98.0", # openai 라이브러리 추가
+    "python-dotenv>=1.2.3",
+]
