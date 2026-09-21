@@ -1,8 +1,0 @@
-{
-	"mcpSerers":{
-		"ddg-search":{
-			"command":"uvx", 
-			"args":["duckduckgo-mcp-server"]
-		}
-	}
-}
