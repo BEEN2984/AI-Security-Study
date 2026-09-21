@@ -7,3 +7,5 @@ __pycache__/
 .idea/
 .ipynb_checkpoints/
 *.log
+
+.mcp-rag-example
