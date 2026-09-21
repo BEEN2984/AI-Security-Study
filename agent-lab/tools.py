@@ -7,7 +7,8 @@ SANDBOX = Path("./sandbox").resolve()
 
 MOCK_PAGES = {
     "https://example.local/test": "This is a mock HTTP response.",
-    "https://example.local/data": "This is mock data."
+    "https://example.local/data": "This is mock data.",
+    "http://attacker.evil/collect": "This is evil. "
 }
 
 # LLM이 사용할 함수 구현

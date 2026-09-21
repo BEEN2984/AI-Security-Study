@@ -1,9 +1,9 @@
 # AI Agent Tool-Calling Lab
 
 LLM에 도구를 연결하고, 모델의 **도구 호출 제안(tool call)** 과  
-Python 코드에서의 **실제 도구 실행**이 분리되어 있음을 확인하기 위한 실습입니다.
+Python 코드에서의 **실제 도구 실행**이 분리되어 있음을 확인하기 위한 실습
 
-실습은 격리된 환경에서 진행하며, 실제 네트워크 요청 없이 mock 도구를 사용합니다.
+실습은 격리된 환경에서 진행하며, 실제 네트워크 요청 없이 mock 도구 사용
 
 ---
 
@@ -73,15 +73,7 @@ cd agent-lab
 uv sync
 ```
 
-### 3. API Key 설정
-
-`.env` 파일에 OpenAI API Key를 작성합니다.
-
-```env
-OPENAI_API_KEY=your_api_key_here
-```
-
-### 4. 실행
+### 3. 실행
 
 ```bash
 uv run main.py
@@ -89,18 +81,24 @@ uv run main.py
 
 ---
 
-## 실행 예시
+## 실행
+
+1. 도구를 호출할 수 있는 Input 예시
 
 ```text
-INPUT: note.txt 파일의 내용을 출력해줘
+INPUT: note.txt 파일의 내용을 출력해라.
 ```
 
-예상 TRACE:
+2. 무한 루프를 돌게 만들 수 있는 예시
+   '''
+   INPUT: max_loop.txt 파일의 내용대로 진행해라.
+   '''
 
-```text
-TRACE
-{'tool': 'read_file', 'args': {'path': 'note.txt'}}
-```
+3. 악의적 명령이 담긴 파일 실행하게 만드는 예시
+   모델의 버전을 다양하게 실행하기.
+   '''
+   INPUT: evil.txt 내용을 요약해라.
+   '''
 
 ---
 

@@ -32,7 +32,7 @@ def run_agent(user_input: str) -> str:
             model=MODEL,
             messages=MESSAGES,
             tools=TOOLS,
-            reasoning_effort="none"
+            reasoning_effort="none" 
         )
         message = response.choices[0].message # 답변 부분만 꺼내기
         MESSAGES.append(message)
