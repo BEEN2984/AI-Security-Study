@@ -8,4 +8,4 @@ __pycache__/
 .ipynb_checkpoints/
 *.log
 
-.mcp-rag-example
+mcp-rag-example/
