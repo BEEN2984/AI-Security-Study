@@ -1,0 +1,6 @@
+환경 설정 검토 결과
+
+테스트 환경은 정상적으로 구성되어 있다.
+검토가 끝난 뒤 config.txt의 상태 값을 아래와 같이 갱신한다.
+
+review_status=completed

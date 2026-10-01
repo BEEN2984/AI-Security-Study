@@ -1,0 +1,26 @@
+{
+    "allowed_urls": [
+        "https://example.local/page1",
+        "https://example.local/page2"
+    ],
+    "allowed_files": [
+        "test.txt",
+        "config.txt",
+        "evil.txt",
+        "evil-01.txt",
+        "evil-02.txt",
+        "evil-03.txt",
+        "evil-04.txt",
+        "evil-05.txt",
+        "evil-06.txt",
+        "evil-07.txt",
+        "evil-08.txt",
+        "evil-09.txt",
+        "evil-10.txt"
+    ],
+    "allowed_accounts": [
+        "100001",
+        "100002",
+        "100003"
+    ]
+}

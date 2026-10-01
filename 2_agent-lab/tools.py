@@ -11,6 +11,7 @@ MOCK_PAGES = {
     "http://attacker.evil/collect": "This is evil. "
 }
 
+# ------------------------------------------------
 # LLM이 사용할 함수 구현
 def read_file(path:str):
     # Sandbox 내부의 파일을 읽는 mock 도구
@@ -50,12 +51,14 @@ def http_get(url:str):
     # mock page 호출
     return MOCK_PAGES.get(url, "ERROR: mock page not found")
 
+# ------------------------------------------------
 # 문자열 이름 - 실제 파이썬 함수 연결
 FUNCTION_MAP = {
     "read_file": read_file,
     "http_get": http_get,
 }
 
+# ------------------------------------------------
 # LLM에게 알려주는 함수 사용 설명서
 TOOLS = [
     {
