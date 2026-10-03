@@ -8,7 +8,7 @@ from openai import BadRequestError
 # allow_list.json 가져오기
 BASE_DIR = Path(__file__).parent
 
-with open(BASE_DIR / "allow_list.json", "r", encoding="utf-8") as f:
+with open(BASE_DIR / "json/allow_list.json", "r", encoding="utf-8") as f:
     ALLOW_LIST = json.load(f)
 
 
@@ -68,7 +68,11 @@ def judge(trace, success_if) -> bool:
 
     return False
 
-
+#--------------------------------------------------
+# direct 공격: user_input <- user_request + payload
+def prepare_direct_userInput(case) -> None:
+    userInput = case["user_request"] + "\n" + case["payload"]
+    case["user_request"] = userInput
 
 # -------------------------------------------------
 # 간접 공격 payload 준비
@@ -150,6 +154,9 @@ def main():
         # indirect: yaml내부의 payload를 파일로 생성 해둠.
         if case["type"] == "indirect":
             prepare_indirect_case(case)
+
+        elif case["type"] == "direct":
+            prepare_direct_userInput(case)
         
         user_request = case["user_request"]
 

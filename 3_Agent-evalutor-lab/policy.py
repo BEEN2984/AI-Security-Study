@@ -2,7 +2,7 @@ import json
 from tools import TRACE
 
 # allow_list 불러오기
-with open("allow_list.json", "r", encoding="utf-8") as f:
+with open("json/allow_list.json", "r", encoding="utf-8") as f:
     ALLOW_LIST = json.load(f)
 
 

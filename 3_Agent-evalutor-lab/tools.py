@@ -10,7 +10,7 @@ SANDBOX = Path("./sandbox").resolve()
 BASE_DIR = Path(__file__).parent
 
 # mock_datas.json 불러오기
-with open(BASE_DIR / "mock_data.json", "r", encoding="utf-8") as f:
+with open(BASE_DIR / "json/mock_data.json", "r", encoding="utf-8") as f:
     MOCK_DATA = json.load(f)
 
 MOCK_PAGES = MOCK_DATA["pages"]
