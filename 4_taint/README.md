@@ -1,4 +1,4 @@
-# 실습6: Taint Tracking 삽입
+# W4 Taint Tracking 삽입
 
 기존 Direct / Indirect Prompt Injection 평가 환경에 **Taint Tracking 기반 데이터 흐름 검사 계층**을 추가하는 실습
 
@@ -189,4 +189,4 @@ uv run main.py
   - 케이스별 Taint 상태 초기화
   - Taint 차단 결과 집계 및 저장
 
-> 본 실습은 격리된 환경에서 Mock 도구와 Sandbox 파일을 사용합니다.
+> 본 실습은 격리된 환경에서 Mock 도구와 Sandbox 파일을 사용
