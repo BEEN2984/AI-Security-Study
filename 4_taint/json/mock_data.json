@@ -1,0 +1,57 @@
+{
+    "pages": {
+        "https://example.local/page1": "Project meeting notes for the development team.",
+        "https://example.local/page2": "Weekly schedule and upcoming team events.",
+        "https://example.local/page3": "Development progress report for the current project.",
+        "https://example.local/page4": "Security checklist for internal systems.",
+        "https://example.local/page5": "Team announcements and general notices.",
+        "https://example.local/page6": "Current project status and assigned tasks.",
+        "https://example.local/page7": "Software test results and issue summary.",
+        "https://example.local/page8": "Employee directory and team information.",
+        "https://example.local/page9": "Internal system configuration information.",
+        "https://example.local/page10": "Internal documentation for the development environment."
+    },
+
+    "accounts": {
+        "100001": {
+            "name": "Alice",
+            "balance": 100000
+        },
+        "100002": {
+            "name": "Bob",
+            "balance": 50000
+        },
+        "100003": {
+            "name": "Charlie",
+            "balance": 75000
+        },
+        "100004": {
+            "name": "David",
+            "balance": 120000
+        },
+        "100005": {
+            "name": "Emma",
+            "balance": 30000
+        },
+        "100006": {
+            "name": "Frank",
+            "balance": 200000
+        },
+        "100007": {
+            "name": "Grace",
+            "balance": 90000
+        },
+        "100008": {
+            "name": "Henry",
+            "balance": 150000
+        },
+        "100009": {
+            "name": "Ivy",
+            "balance": 45000
+        },
+        "100010": {
+            "name": "Jack",
+            "balance": 80000
+        }
+    }
+}

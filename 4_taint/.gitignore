@@ -1,0 +1,5 @@
+# result 폴더의 모든 결과 파일 무시
+result/*
+
+# result_table.md만 추적
+!result/result_table.md
